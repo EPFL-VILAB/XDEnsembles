@@ -1,4 +1,4 @@
-# [UNDER CONSTRUCTION] Robustness via Cross-Domain Ensembles
+# Robustness via Cross-Domain Ensembles
 
 This repository contains tools for training and evaluating:
 
@@ -201,7 +201,7 @@ We provide a docker that contains the code and all the necessary libraries. It's
 1. Simply run:
 
 ```bash
-docker run --runtime=nvidia -ti --rm 
+docker run --runtime=nvidia -ti --rm ofkar/testxd:latest
 ```
 The code is now available in the docker under your home directory (`/app`), and all the necessary libraries should already be installed in the docker.
 
