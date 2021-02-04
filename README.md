@@ -203,7 +203,7 @@ We provide a docker that contains the code and all the necessary libraries. It's
 ```bash
 docker run --runtime=nvidia -ti --rm ofkar/xdensembles:latest
 ```
-The code is now available in the docker under your home directory (`/app`), and all the necessary libraries should already be installed in the docker.
+The code is now available in the docker under your home directory (`/XDEnsembles`), and all the necessary libraries should already be installed in the docker.
 
 #### Installation via Pip/Conda/Virtualenv
 The code can also be run using a Python environment manager such as Conda. See [requirements.txt](./requirements.txt) for complete list of packages. We recommend doing a clean installation of requirements using virtualenv:
