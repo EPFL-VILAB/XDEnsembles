@@ -201,7 +201,7 @@ We provide a docker that contains the code and all the necessary libraries. It's
 1. Simply run:
 
 ```bash
-docker run --runtime=nvidia -ti --rm ofkar/testxd:latest
+docker run --runtime=nvidia -ti --rm ofkar/xdensembles:latest
 ```
 The code is now available in the docker under your home directory (`/app`), and all the necessary libraries should already be installed in the docker.
 
