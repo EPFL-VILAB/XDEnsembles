@@ -384,11 +384,11 @@ python test.py -domain $DOMAIN_NAME -net $ARCH_NAME -weights $PATH_FOR_WEIGHTS
 If you find the code, models, or data useful, please cite this paper:
 
 ```
-@article{,
+@article{yeo2021robustness,
   title={Robustness via Cross-Domain Ensembles},
-  author={},
-  journal={},
-  year={}
+  author={Yeo, Teresa and Kar, Oğuzhan Fatih and Zamir, Amir},
+  journal={arXiv},
+  year={2021}
 }
 ```
 
