@@ -112,24 +112,24 @@ Example with `pixelate` distortion at severity 2:
 python demo.py --task normal --img_path assets/test.png --output_path assets/ --distortion 'pixelate' --severity 2
 ```
 
-Test image (distorted)                  |  Baseline			      |  Deep ensembles           | Ours
-:-------------------------:  |:-------------------------: |:-------------------------:|:-------------------------:
-![](./assets/ex1_distorted_input.png)        |  ![](./assets/ex1_normal_baseline_mean.png) |  ![](./assets/ex1_normal_deepens_mean.png) |  ![](./assets/ex1_normal_ours_mean.png)
-&nbsp;        |  ![](./assets/ex1_normal_baseline_sig.png) |  ![](./assets/ex1_normal_deepens_sig.png) |  ![](./assets/ex1_normal_ours_sig.png)
+Test image (distorted)      |            |  Baseline			      |  Deep ensembles           | Ours
+:-------------------------: | :-------------------------: |:-------------------------: |:-------------------------:|:-------------------------:
+![](./assets/ex1_distorted_input.png)      | Prediction  |  ![](./assets/ex1_normal_baseline_mean.png) |  ![](./assets/ex1_normal_deepens_mean.png) |  ![](./assets/ex1_normal_ours_mean.png)
+&nbsp;        |Uncertainty|  ![](./assets/ex1_normal_baseline_sig.png) |  ![](./assets/ex1_normal_deepens_sig.png) |  ![](./assets/ex1_normal_ours_sig.png)
 
 The distorted input is also saved as `distorted_input.png` in the output folder.
 
 Similarly, running for target tasks `reshading` and `depth` gives the followings:
 
-  Baseline (reshading)			      |  Deep ensembles (reshading)           | Ours (reshading)
-:-------------------------: |:-------------------------:|:-------------------------:
-  ![](./assets/ex1_reshading_baseline_mean.png) |  ![](./assets/ex1_reshading_deepens_mean.png) |  ![](./assets/ex1_reshading_ours_mean.png)
- ![](./assets/ex1_reshading_baseline_sig.png) |  ![](./assets/ex1_reshading_deepens_sig.png) |  ![](./assets/ex1_reshading_ours_sig.png)
+| |  Baseline (reshading)			      |  Deep ensembles (reshading)           | Ours (reshading)
+|:-------------------------: | :-------------------------: |:-------------------------:|:-------------------------:
+|Prediction |  ![](./assets/ex1_reshading_baseline_mean.png) |  ![](./assets/ex1_reshading_deepens_mean.png) |  ![](./assets/ex1_reshading_ours_mean.png)
+|Uncertainty | ![](./assets/ex1_reshading_baseline_sig.png) |  ![](./assets/ex1_reshading_deepens_sig.png) |  ![](./assets/ex1_reshading_ours_sig.png)
 
-   Baseline (depth)			      |  Deep ensembles (depth)           | Ours (depth)
-:-------------------------: |:-------------------------:|:-------------------------:
-  ![](./assets/ex1_depth_zbuffer_baseline_mean.png) |  ![](./assets/ex1_depth_zbuffer_deepens_mean.png) |  ![](./assets/ex1_depth_zbuffer_ours_mean.png)
- ![](./assets/ex1_depth_zbuffer_baseline_sig.png) |  ![](./assets/ex1_depth_zbuffer_deepens_sig.png) |  ![](./assets/ex1_depth_zbuffer_ours_sig.png)
+| |   Baseline (depth)			      |  Deep ensembles (depth)           | Ours (depth)
+|:-------------------------: | :-------------------------: |:-------------------------:|:-------------------------:
+|Prediction |  ![](./assets/ex1_depth_zbuffer_baseline_mean.png) |  ![](./assets/ex1_depth_zbuffer_deepens_mean.png) |  ![](./assets/ex1_depth_zbuffer_ours_mean.png)
+|Uncertainty | ![](./assets/ex1_depth_zbuffer_baseline_sig.png) |  ![](./assets/ex1_depth_zbuffer_deepens_sig.png) |  ![](./assets/ex1_depth_zbuffer_ours_sig.png)
 
 
 ## Pretrained models
