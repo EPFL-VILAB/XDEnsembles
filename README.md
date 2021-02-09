@@ -92,11 +92,6 @@ python demo.py --task normal --img_path assets/test.png --output_path assets/
 
 It returns the output prediction (`test_normal_ours_mean.png`) and the associated uncertainty (`test_normal_ours_sig.png`) for the proposed method as well as the single UNet baseline and deep ensembles.
 
-Test image                 |  Baseline			        |  Deep ensembles           | Ours
-:--:|:--:|:--:|:--:
-![](./assets/ex1_clean_input.png) |  ![](./assets/ex1_clean_normal_baseline_mean.png) |  ![](./assets/ex1_clean_normal_deepens_mean.png) |  ![](./assets/ex1_clean_normal_ours_mean.png)
- &nbsp; |  ![](./assets/ex1_clean_normal_baseline_sig.png) |  ![](./assets/ex1_clean_normal_deepens_sig.png) |  ![](./assets/ex1_clean_normal_ours_sig.png)
-
 #### Distorted data
 
 You can also apply distortion to your input from [Common Corruptions](https://arxiv.org/abs/1903.12261) to see how well the models handle the distribution shift.
