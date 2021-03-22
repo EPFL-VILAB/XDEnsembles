@@ -43,7 +43,7 @@ Table of Contents
 
 ### Middle and target domains
 
-For the paper, we programmatically extracted the following middle domains from the RGB input (no learning, implementations are provided [here](https://github.com/EPFL-VILAB/XDEnsembles/blob/master/utils.py):
+For the paper, we programmatically extracted the following middle domains from the RGB input (no learning, implementations are provided [here](https://github.com/EPFL-VILAB/XDEnsembles/blob/master/utils.py)):
 
     Emboss         Greyscale               Sobel Edges            Laplace Edges         
     Wavelet        Low-pass Filtered       Sharpened
