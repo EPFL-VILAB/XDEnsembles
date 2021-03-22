@@ -41,26 +41,30 @@ Table of Contents
 
 
 
-### Target and middle domains
+### Middle and target domains
 
-For the paper, we use the following target domains from the [Taskonomy dataset](https://github.com/StanfordVL/taskonomy/tree/master/data):
-
-    Surface Normals          Depth (Z-Buffer)            Reshading
-
-We also programmatically extracted the following middle domains from the RGB input (no learning):
+For the paper, we programmatically extracted the following middle domains from the RGB input (no learning, implementations are provided [here](https://github.com/EPFL-VILAB/XDEnsembles/blob/master/utils.py):
 
     Emboss         Greyscale               Sobel Edges            Laplace Edges         
     Wavelet        Low-pass Filtered       Sharpened
+    
+A visualization of these middle domains for an RGB image can be seen below. 
 
-A visualization of target and middle domains for an RGB image can be seen below.
+RGB                 |  Emboss                 |  Greyscale			        |  Sobel Edges 
+:--:|:--:|:--:|:--:
+![](./assets/rgb.png) |  ![](./assets/emboss.png) |  ![](./assets/grey.png) |  ![](./assets/sobel.png)
+Laplace Edges   |  Wavelet                 |  Low-pass Filtered			        |  Sharpened  
+![](./assets/laplace.png) | ![](./assets/wav.png) |  ![](./assets/gauss.png) |  ![](./assets/sharp.png)
+
+For target domains, we use the followings from the [Taskonomy dataset](https://github.com/StanfordVL/taskonomy/tree/master/data):
+
+    Surface Normals          Depth (Z-Buffer)            Reshading
+
+A visualization of target domains for an RGB image can be seen below.
 
 RGB                 |  Surface Normals			        |  Depth (Z-Buffer)          | Reshading
 :--:|:--:|:--:|:--:
 ![](./assets/rgb.png) |  ![](./assets/normal.png) |  ![](./assets/depth.png) |  ![](./assets/reshading.png)
-Emboss                 |  Greyscale			        |  Sobel Edges           | Laplace Edges
-![](./assets/emboss.png) |  ![](./assets/grey.png) |  ![](./assets/sobel.png) |  ![](./assets/laplace.png)
-Wavelet                 |  Low-pass Filtered			        |  Sharpened           | &nbsp;
-![](./assets/wav.png) |  ![](./assets/gauss.png) |  ![](./assets/sharp.png) |  &nbsp;
 
 
     
