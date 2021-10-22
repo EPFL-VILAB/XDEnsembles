@@ -386,7 +386,7 @@ If you find the code, models, or data useful, please cite this paper:
 @article{yeo2021robustness,
   title={Robustness via Cross-Domain Ensembles},
   author={Yeo, Teresa and Kar, O\u{g}uzhan Fatih and Zamir, Amir},
-  journal={arXiv},
+  journal={ICCV},
   year={2021}
 }
 ```
